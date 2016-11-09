@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: hel-hadi <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: hel-hadi <hel-hadi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/06 09:17:24 by hel-hadi          #+#    #+#              #
-#    Updated: 2016/11/06 09:17:27 by hel-hadi         ###   ########.fr        #
+#    Updated: 2016/11/08 18:55:43 by hel-hadi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME = libft.a
 PREF = ./srcs/
 HEADER = ./includes/
 SRCS = *.c
+SRCTEST = test_libft_partie_1.c libft.a && ./a.out
 OBJ = *.o
 CC = gcc
 OPTION = -c
@@ -26,6 +27,8 @@ $(NAME):
 				ar rc $(NAME) $(OBJ)
 				ranlib $(NAME)
 
+test 	:
+		$(CC) $(SRCTEST)
 clean	:
 	rm -f *.o
 
