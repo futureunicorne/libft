@@ -6,7 +6,7 @@
 /*   By: dlouise <dlouise@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/09/24 02:10:35 by dlouise           #+#    #+#             */
-/*   Updated: 2016/11/09 10:09:04 by hel-hadi         ###   ########.fr       */
+/*   Updated: 2016/11/09 19:57:06 by hel-hadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,17 +27,17 @@
 //#define TEST_STRLCAT
 //#define TEST_STRCHR
 //#define TEST_STRRCHR
-//#define TEST_STRSTR
-//#define TEST_STRNSTR
+#define TEST_STRSTR
+#define TEST_STRNSTR
 #define TEST_STRCMP
 #define TEST_STRNCMP
 #define TEST_ATOI
-//#define TEST_ISALPHA
-//#define TEST_ISDIGIT
-//#define TEST_ISALNUM
-//#define TEST_ISASCII
-//#define TEST_ISPRINT
-//#define TEST_TOUPPER
+#define TEST_ISALPHA
+#define TEST_ISDIGIT
+#define TEST_ISALNUM
+#define TEST_ISASCII
+#define TEST_ISPRINT
+#define TEST_TOUPPER
 //#define TEST_TOLOWER
 
 #include <stdio.h>
