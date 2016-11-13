@@ -6,7 +6,7 @@
 #    By: hel-hadi <hel-hadi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/06 09:17:24 by hel-hadi          #+#    #+#              #
-#    Updated: 2016/11/08 18:55:43 by hel-hadi         ###   ########.fr        #
+#    Updated: 2016/11/13 10:35:59 by hel-hadi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,7 @@ PREF = ./srcs/
 HEADER = ./includes/
 SRCS = *.c
 SRCTEST = test_libft_partie_1.c libft.a && ./a.out
+SRCTEST2 = test_libft_partie_2.c libft.a && ./a.out
 OBJ = *.o
 CC = gcc
 OPTION = -c
@@ -27,8 +28,11 @@ $(NAME):
 				ar rc $(NAME) $(OBJ)
 				ranlib $(NAME)
 
-test 	:
-		$(CC) $(SRCTEST)
+f 	:
+				$(CC) $(SRCTEST)
+
+g		:
+				$(CC) $(SRCTEST2)
 clean	:
 	rm -f *.o
 

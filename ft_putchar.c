@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hel-hadi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hel-hadi <hel-hadi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 14:32:39 by hel-hadi          #+#    #+#             */
-/*   Updated: 2016/11/06 14:37:03 by hel-hadi         ###   ########.fr       */
+/*   Updated: 2016/11/13 10:36:17 by hel-hadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,11 @@ void	ft_putchar(char c)
 {
 	write(1, (const wchar_t *)&c, 1);
 }
-
+/*
 int	main(void)
 {
 	ft_putchar(L'ø');
 	ft_putchar(' ');
 	return (0);
 }
+*/

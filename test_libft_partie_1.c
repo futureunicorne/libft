@@ -6,27 +6,27 @@
 /*   By: dlouise <dlouise@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/09/24 02:10:35 by dlouise           #+#    #+#             */
-/*   Updated: 2016/11/09 19:57:06 by hel-hadi         ###   ########.fr       */
+/*   Updated: 2016/11/13 11:04:25 by hel-hadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // Les tests definis ici seront effectues
-//#define TEST_MEMSET
+#define TEST_MEMSET
 #define TEST_BZERO
-//#define TEST_MEMCPY
-//#define TEST_MEMCCPY
-//#define TEST_MEMMOVE
-//#define TEST_MEMCHR
-//#define TEST_MEMCMP
+#define TEST_MEMCPY
+#define TEST_MEMCCPY
+#define TEST_MEMMOVE
+#define TEST_MEMCHR
+#define TEST_MEMCMP
 #define TEST_STRLEN
 #define TEST_STRDUP
 #define TEST_STRCPY
 #define TEST_STRNCPY
-//#define TEST_STRCAT
-//#define TEST_STRNCAT
+#define TEST_STRCAT
+#define TEST_STRNCAT
 //#define TEST_STRLCAT
-//#define TEST_STRCHR
-//#define TEST_STRRCHR
+#define TEST_STRCHR
+#define TEST_STRRCHR
 #define TEST_STRSTR
 #define TEST_STRNSTR
 #define TEST_STRCMP
@@ -38,7 +38,7 @@
 #define TEST_ISASCII
 #define TEST_ISPRINT
 #define TEST_TOUPPER
-//#define TEST_TOLOWER
+#define TEST_TOLOWER
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -315,7 +315,7 @@ int     test_memccpy(void)
 int     test_memmove(void)
 {
     char    tab[10];
-	int		i;
+
 	char*	tab2;
     memcpy(tab, "abcdefghij", 10);
     if (tab + 5 != ft_memmove(tab + 5, tab + 4, 5))

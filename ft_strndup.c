@@ -6,7 +6,7 @@
 /*   By: hel-hadi <hel-hadi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/10 07:48:11 by hel-hadi          #+#    #+#             */
-/*   Updated: 2016/11/10 07:55:04 by hel-hadi         ###   ########.fr       */
+/*   Updated: 2016/11/10 11:03:20 by hel-hadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strndup(const char *s, size_t n)
 	size_t i;
 
 	i = 0;
-	if((dup = (char*)malloc(sizeof(char) * ft_strlen(s - n) + 1)) == NULL)
+	if((dup = (char*)malloc(sizeof(char) * ft_strlen(s ) + 1)) == NULL)
 		return (NULL);
 
 	while (s[i] && i < n)
