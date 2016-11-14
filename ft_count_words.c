@@ -1,31 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_count_words.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hel-hadi <hel-hadi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/08 19:16:20 by hel-hadi          #+#    #+#             */
-/*   Updated: 2016/11/13 17:22:37 by hel-hadi         ###   ########.fr       */
+/*   Created: 2016/11/13 16:07:41 by hel-hadi          #+#    #+#             */
+/*   Updated: 2016/11/14 00:42:15 by hel-hadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strncpy(char *dest, const char *src, size_t n)
+int	ft_count_words(char const *s, char c)
 {
-	size_t i;
+	int count;
+	int auth;
 
-	i = 0;
-  while(src[i] != '\0' && i < n)
-  {
-    dest[i] = src[i];
-    i++;
-  }
-	while (i < n)
+	count = 0;
+	auth = 0;
+	while (*s)
 	{
-		dest[i] = '\0';
-		i++;
+		if (auth == 1 && *s == c) // flags pour autoriser le compte
+			auth = 0;
+		if (auth == 0 && *s != c)
+		{
+			auth = 1;
+			count++;
+		}
+		s++;
 	}
-	return(dest);
+	return (count);
 }
+/*
+int	main(void)
+{
+	printf("%d\n", ft_count_words("je*hamza****elhadi*27ans*", '*'));
+	return (0);
+}
+*/

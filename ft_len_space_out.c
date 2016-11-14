@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_len_space_out.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hel-hadi <hel-hadi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/08 19:16:20 by hel-hadi          #+#    #+#             */
-/*   Updated: 2016/11/13 17:22:37 by hel-hadi         ###   ########.fr       */
+/*   Created: 2016/11/13 13:47:41 by hel-hadi          #+#    #+#             */
+/*   Updated: 2016/11/13 17:22:33 by hel-hadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strncpy(char *dest, const char *src, size_t n)
+int	len_space_out(char const *s)
 {
-	size_t i;
+	int i;
+	int count;
 
 	i = 0;
-  while(src[i] != '\0' && i < n)
-  {
-    dest[i] = src[i];
-    i++;
-  }
-	while (i < n)
+	count = 0;
+	while (s[i])
 	{
-		dest[i] = '\0';
+		if (s[i] == ' ' || s[i] == '\t' || s[i] == '\n')
+		{
+			count++;
+		}
 		i++;
 	}
-	return(dest);
+	return (i - count);
 }

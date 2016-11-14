@@ -6,7 +6,7 @@
 /*   By: hel-hadi <hel-hadi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 15:24:11 by hel-hadi          #+#    #+#             */
-/*   Updated: 2016/11/13 10:47:36 by hel-hadi         ###   ########.fr       */
+/*   Updated: 2016/11/14 10:19:51 by hel-hadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,9 @@ int ft_atoi(const char *nptr);
 int	ft_memcmp(const void *s1, const void *s2, size_t n);
 int	ft_strequ(char const *s1,char const *s2);
 int ft_strnequ(char const *s1, char const *s2, size_t n);
+int	len_space_out(char const *s);
+int	ft_count_words(char const *s, char c);
+
 
 
 char	*ft_strcpy(char *dest, const char *src);
@@ -70,7 +73,12 @@ char	*ft_strnew(size_t size);
 char	*ft_strmap(char const *s,char(*f)(char));
 char	*ft_strmapi(char const *s, char(*f)(unsigned int, char));
 char	*ft_strsub(char const *s,unsigned int start, size_t len);
-char *ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s);
+char	*ft_strtrim_all(char const *s);
+char	**ft_strsplit(char const *s,char c);
+char	*ft_itoa(int n);
+
 
 size_t	ft_strlen(const char *s);
 #endif

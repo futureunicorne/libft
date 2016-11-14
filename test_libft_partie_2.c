@@ -6,7 +6,7 @@
 /*   By: dlouise <dlouise@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/09/24 02:10:35 by dlouise           #+#    #+#             */
-/*   Updated: 2016/11/13 10:32:29 by hel-hadi         ###   ########.fr       */
+/*   Updated: 2016/11/14 00:43:58 by hel-hadi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 #define TEST_STRSUB
 #define TEST_STRJOIN
 //#define TEST_STRTRIM
-//#define TEST_STRSPLIT
+#define TEST_STRSPLIT
 //#define TEST_ITOA
 #define TEST_PUTCHAR
 #define TEST_PUTSTR
